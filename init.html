@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="description" content="コンテキスト名" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>javascript課題②</title>
+</head>
+
+<body>
+    <h2>TODOリスト</h2>
+    <form action="">
+        <label><input value="すべて" type="radio" name="status" checked="checked">すべて</label>
+        <label><input value="作業中" type="radio" name="status">作業中</label>
+        <label><input value="完了" type="radio" name="status">完了</label>
+    </form>
+    <div class="task-list">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>コメント</th>
+                    <th>状態</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+    <h3>新規タスクの追加</h3>
+    <div class="register-task">
+        <input id="add-text" type="text" placeholder="タスクを入力">
+        <button id="add-button">追加</button>
+    </div>
+</body>
+
+<script>
+    window.addEventListener('load', () => {
+        init()
+        }, false);
+</script>
+
+</html>
